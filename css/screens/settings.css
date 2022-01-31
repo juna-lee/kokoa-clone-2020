@@ -1,0 +1,35 @@
+.settings__setting {
+  padding: 25px 0px;
+  border-bottom: var(--main-border);
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings__setting i {
+  margin-right: 20px;
+  width: 30px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
+
+.settings__setting:last-child {
+  border: none;
+  padding-bottom: 47px;
+}
+
+.settings__border {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-bottom: var(--main-border);
+  margin-bottom: 22px;
+}
+
+.settings-list:last-child {
+  margin-bottom: 70px;
+}

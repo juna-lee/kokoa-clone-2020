@@ -1,0 +1,128 @@
+.recommended-friends {
+  margin: 23px 0px;
+  padding: 20px 0px;
+  border-bottom: var(--main-border);
+  border-top: var(--main-border);
+}
+
+.recommended-friends__title {
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.recommended-friends span {
+  color: var(--gray);
+  margin: 90px 0px;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.6;
+  margin-bottom: 25px;
+}
+
+.open-chat__header span {
+  opacity: 0.5;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: var(--main-border);
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.open-post__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.open-post__member-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .divider {
+  width: 1px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0px 9px;
+}
+
+.open-post__member-status {
+  color: #ff56aa;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 11px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 14px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+  100% {
+    color: tomato;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover .fa-heart {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+
+.open-post__heart-count span {
+  margin-left: 4px;
+}
+
+.open-post:last-child {
+  margin-bottom: 70px;
+}
